@@ -6,6 +6,7 @@ public class CustomerManager {
 
 	public CustomerManager(Logger[] loggers) {
 		this.loggers = loggers;
+
 	}
 
 	// loosly - tightly coupled
@@ -16,8 +17,8 @@ public class CustomerManager {
 	}
 
 	public void delete(Customer customer) {
-		System.out.println("Müþteri silindi " + customer.getFirstName());
-		Utils.runLoggers(loggers, customer.getFirstName());
+		System.out.println("Müþteri silindi " + customer.getLastName());
+		Utils.runLoggers(loggers, customer.getLastName());
 	}
 
 }

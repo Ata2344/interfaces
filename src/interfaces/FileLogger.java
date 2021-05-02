@@ -3,8 +3,8 @@ package interfaces;
 public class FileLogger implements Logger {
 
 	@Override
-	public void log(String message) {
-		System.out.println("Dosyaya loglandý : " + message);
+	public void addLog(String addMessage) {
+		System.out.println("Dosyaya loglandý : " + addMessage);
 
 	}
 

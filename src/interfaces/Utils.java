@@ -1,10 +1,10 @@
 package interfaces;
 
 public class Utils {
-	public static void runLoggers(Logger[] loggers, String message) {
+	public static void runLoggers(Logger[] loggers, String addMessage) {
 
 		for (Logger logger : loggers) {
-			logger.log(message);
+			logger.addLog(addMessage);
 		}
 
 	}

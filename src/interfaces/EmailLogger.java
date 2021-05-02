@@ -3,8 +3,8 @@ package interfaces;
 public class EmailLogger implements Logger {
 
 	@Override
-	public void log(String message) {
-		System.out.println("eMail Gönderildi " + message);
+	public void addLog(String addMessage) {
+		System.out.println("eMail Gönderildi : " + addMessage);
 
 	}
 
