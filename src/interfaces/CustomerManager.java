@@ -11,14 +11,14 @@ public class CustomerManager {
 
 	// loosly - tightly coupled
 	public void add(Customer customer) {
-		System.out.println("Müþteri eklendi " + customer.getFirstName());
+		System.out.println("Müþteri eklendi " + customer.getFirstName()+ " "+customer.getLastName());
 		Utils.runLoggers(loggers, customer.getFirstName());
 
 	}
 
 	public void delete(Customer customer) {
-		System.out.println("Müþteri silindi " + customer.getLastName());
-		Utils.runLoggers(loggers, customer.getLastName());
+		System.out.println("Müþteri silindi "+ customer.getFirstName()+ " "+customer.getLastName());
+		Utils.runLoggers(loggers, "Id : "+customer.getId() +" " +customer.getFirstName());
 	}
 
 }

@@ -9,14 +9,21 @@ public class Main {
 		
 
 		CustomerManager customerManager = new CustomerManager(addLoggers);
-		Customer customer = new Customer(1, "Ahmet ", "Turan");
-		customerManager.add(customer);
+		Customer customer1 = new Customer(1, "Ahmet", "Turan");
+		Customer customer2 = new Customer(2, "Engin", "Altan");
+		Customer customer3 = new Customer(3, "Mahmut", "Tuncer");
+		Customer[] customers = {customer1,customer2,customer3};
+		for (Customer customer : customers) {
+			customerManager.add(customer);
+			System.out.println("");
+		}
+		
+
 		
 		System.out.println("------------------------\n------------------------");
 		
 		CustomerManager customerManager_delete = new CustomerManager(deleteLoggers);
-		Customer customer_delete = new Customer(1, "Engin ", "Altan");
-		customerManager_delete.delete(customer_delete);
+		customerManager_delete.delete(customer1);
 		
 		
 		
